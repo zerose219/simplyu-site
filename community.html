@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyShop - 커뮤니티</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- 헤더 -->
+  <header class="header">
+    <div class="top-bar">
+      <div class="logo">
+        <a href="index.html">Simplyu</a>
+      </div>
+      <div class="user-menu">
+        <a href="login.html">로그인</a>
+        <a href="mypage.html">마이페이지</a>
+      </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav class="main-nav">
+    <ul class="main-menu">
+    <li class="dropdown">
+    <a href="category.html?category=top">Shop</a>
+    <ul class="submenu">
+        <li><a href="category.html?category=top">상의</a></li>
+        <li><a href="category.html?category=bottom">하의</a></li>
+        <li><a href="category.html?category=acc">악세사리</a></li>
+    </ul>
+    </li>
+    <li class="dropdown">
+      <a href="community.html">community</a>
+      <ul class="submenu">
+        <li><a href="community.html?tab=notice">공지</a></li>
+        <li><a href="community.html?tab=question">질문</a></li>
+        <li><a href="community.html?tab=review">리뷰</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown search-dropdown">
+      <a href="#">검색</a>
+      <div class="search-bar">
+        <input type="text" placeholder="검색어 입력" />
+        <button>search</button>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+  <!-- ✅ 탭 메뉴: 공지 / 질문 / 리뷰 -->
+<!-- 필터 버튼 메뉴 -->
+<div class="filter-bar">
+  <button data-tab="notice" class="tab-btn filter-btn active">공지</button>
+  <button data-tab="question" class="tab-btn filter-btn">질문</button>
+  <button data-tab="review" class="tab-btn filter-btn">리뷰</button>
+</div>
+
+<!-- ✅ 탭 내용 -->
+<div class="tab-content notice active">
+  <p>공지 내용입니다.</p>
+</div>
+<div class="tab-content question">
+  <p>질문 내용입니다.</p>
+</div>
+<div class="tab-content review">
+  <p>리뷰 내용입니다.</p>
+</div>
+
+
+
+  <!-- ✅ 페이지네이션 -->
+  <div class="pagination">
+    <a href="#" class="page-num active">1</a>
+    <a href="#" class="page-num">2</a>
+    <a href="#" class="page-num">3</a>
+  </div>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">이용약관</a>
+      <a href="#">고객센터</a>
+    </div>
+  </footer>
+
+  <!-- ✅ JS로 탭 전환 -->
+  <script>
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        contents.forEach(c => c.classList.remove('active'));
+        document.querySelector(`.tab-content.${tab.dataset.tab}`).classList.add('active');
+      });
+    });
+  </script>
+  <script src="js/community-tabs.js"></script>
+
+</body>
+</html>

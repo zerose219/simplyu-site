@@ -22,106 +22,115 @@
 
     <!-- 네비게이션 -->
     <nav class="main-nav">
-    <ul class="main-menu">
-    <li class="dropdown">
-    <a href="category.html">Shop</a>
-    <ul class="submenu">
-        <li><a href="category.html?category=top">상의</a></li>
-        <li><a href="category.html?category=bottom">하의</a></li>
-        <li><a href="category.html?category=acc">악세사리</a></li>
-    </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#">community</a>
-      <ul class="submenu">
-        <li><a href="community.html?tab=notice">공지</a></li>
-        <li><a href="community.html?tab=question">질문</a></li>
-        <li><a href="community.html?tab=review">리뷰</a></li>
+      <ul class="main-menu">
+        <li class="dropdown">
+          <a href="category.html?category=top">Shop</a>
+          <ul class="submenu">
+            <li><a href="category.html?category=top">상의</a></li>
+            <li><a href="category.html?category=bottom">하의</a></li>
+            <li><a href="category.html?category=acc">악세사리</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="community.html">community</a>
+          <ul class="submenu">
+            <li><a href="community.html?tab=notice">공지</a></li>
+            <li><a href="community.html?tab=question">질문</a></li>
+            <li><a href="community.html?tab=review">리뷰</a></li>
+          </ul>
+        </li>
+        <li class="dropdown search-dropdown">
+          <a href="#">검색</a>
+          <div class="search-bar">
+            <input type="text" placeholder="검색어 입력" />
+            <button>search</button>
+          </div>
+        </li>
       </ul>
-    </li>
-
-    <li class="dropdown search-dropdown">
-      <a href="#">검색</a>
-      <div class="search-bar">
-        <input type="text" placeholder="검색어 입력" />
-        <button>search</button>
-      </div>
-    </li>
-  </ul>
-</nav>
-
+    </nav>
   </header>
 
+  <!-- 본문 -->
+  <main class="product-section">
+    <h2>상품</h2>
 
-  <!--상품 목록 -->
-<main class="product-section">
-  <h2>상품</h2>
+    <!-- 필터바 (JS가 변경) -->
+    <div id="filter-bar" class="filter-bar"></div>
 
-  <!-- 필터 버튼 메뉴 -->
-<div class="filter-bar">
-  <button data-filter="all" class="filter-btn active">전체</button>
-  <button data-filter="long" class="filter-btn">긴팔</button>
-  <button data-filter="short" class="filter-btn">반팔</button>
-  <button data-filter="shirt" class="filter-btn">셔츠</button>
-</div>
-
+    <!-- 상의 탭 -->
+    <!-- 🎽 상의 탭 -->
+<div class="category-tab-content" data-category="top">
   <div class="product-grid">
-    <div class="product-card">
+    <div class="product-card" data-category="상의" data-subcategory="긴팔">
       <img src="images/best1.png" alt="상품1" />
       <p class="name">프릴 blouse</p>
       <p class="price">₩29,000</p>
     </div>
-    <div class="product-card">
-      <img src="images/best2.png" alt="상품2" />
-      <p class="name">버뮤다pants</p>
-      <p class="price">₩39,000</p>
-    </div>
-    <div class="product-card">
-      <img src="images/best3.png" alt="상품3" />
-      <p class="name">데님 shorts</p>
-      <p class="price">₩30,000</p>
-    </div>
-    <div class="product-card">
+    <div class="product-card" data-category="상의" data-subcategory="반팔">
       <img src="images/best4.png" alt="상품4" />
       <p class="name">벌룬 blouse</p>
       <p class="price">₩38,000</p>
     </div>
-    <div class="product-card">
+    <div class="product-card" data-category="상의" data-subcategory="셔츠">
       <img src="images/best5.png" alt="상품5" />
       <p class="name">셔링 blouse</p>
       <p class="price">₩35,000</p>
     </div>
-    <div class="product-card">
+    <div class="product-card" data-category="상의" data-subcategory="셔츠">
       <img src="images/best6.png" alt="상품6" />
-      <p class="name">벌룬 blouse</p>
-      <p class="price">₩38,000</p>
-    </div>
-    <div class="product-card">
-      <img src="images/best7.png" alt="상품7" />
-      <p class="name">벌룬 blouse</p>
-      <p class="price">₩38,000</p>
-    </div>
-    <div class="product-card">
-      <img src="images/best8.png" alt="상품8" />
-      <p class="name">벌룬 blouse</p>
-      <p class="price">₩38,000</p>
-    </div>
-    <div class="product-card">
-      <img src="images/best9.png" alt="상품9" />
-      <p class="name">벌룬 blouse</p>
+      <p class="name">크롭 shirts</p>
       <p class="price">₩38,000</p>
     </div>
   </div>
-</main>
-
-<!-- 페이지네이션 -->
-<div class="pagination">
-  <a href="#" class="prev">«</a>
-  <a href="#" class="page-num active">1</a>
-  <a href="#" class="page-num">2</a>
-  <a href="#" class="page-num">3</a>
-  <a href="#" class="next">»</a>
 </div>
+
+<!-- 👖 하의 탭 -->
+<div class="category-tab-content" data-category="bottom">
+  <div class="product-grid">
+    <div class="product-card" data-category="하의" data-subcategory="반바지">
+      <img src="images/best2.png" alt="상품2" />
+      <p class="name">버뮤다 pants</p>
+      <p class="price">₩39,000</p>
+    </div>
+    <div class="product-card" data-category="하의" data-subcategory="반바지">
+      <img src="images/best3.png" alt="상품3" />
+      <p class="name">데님 shorts</p>
+      <p class="price">₩30,000</p>
+    </div>
+  </div>
+</div>
+
+<!-- 👗 기타(악세사리 대체용) 탭 → dress로 임시 분류 -->
+<div class="category-tab-content" data-category="acc">
+  <div class="product-grid">
+    <div class="product-card" data-category="악세사리">
+      <img src="images/best7.png" alt="상품7" />
+      <p class="name">실크 dress</p>
+      <p class="price">₩35,000</p>
+    </div>
+    <div class="product-card" data-category="악세사리">
+      <img src="images/best8.png" alt="상품8" />
+      <p class="name">꽃무늬 dress</p>
+      <p class="price">₩32,000</p>
+    </div>
+    <div class="product-card" data-category="악세사리">
+      <img src="images/best9.png" alt="상품9" />
+      <p class="name">라탄 dress</p>
+      <p class="price">₩30,000</p>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <!-- 페이지네이션 -->
+  <div class="pagination">
+    <a href="#" class="prev">«</a>
+    <a href="#" class="page-num active">1</a>
+    <a href="#" class="page-num">2</a>
+    <a href="#" class="page-num">3</a>
+    <a href="#" class="next">»</a>
+  </div>
 
   <!-- 푸터 -->
   <footer class="footer">
@@ -132,5 +141,6 @@
     </div>
   </footer>
 
+  <script src="js/common.js"></script>
 </body>
 </html>

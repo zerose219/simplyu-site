@@ -252,3 +252,184 @@ ul {
   color: #000;
   border-bottom: 2px solid #000;
 }
+
+
+/* ===== 로그인 영역 ===== */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  min-height: 400px;
+}
+
+.login-box {
+  width: 320px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-box .login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box .login-btn:hover {
+  background-color: #444;
+}
+
+.login-box .link {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.login-box .link a {
+  color: #222;
+  text-decoration: underline;
+}
+
+/* ===== 마이페이지 ===== */
+.mypage-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mypage-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.mypage-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mypage-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.mypage-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mypage-links a {
+  display: inline-block;
+  padding: 12px;
+  text-align: center;
+  background: #222;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 15px;
+}
+
+.mypage-links a:hover {
+  background: #444;
+}
+
+/* 마이페이지 링크 스타일 수정 */
+.mypage-links a {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  background: #f9f9f9;        /* box와 같은 배경색 */
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 15px;
+}
+
+/* hover 효과 */
+.mypage-links a:hover {
+  background: #eee;
+}
+
+/* 회원 탈퇴만 따로 강조 (가장 마지막 a 태그에 클래스 주기 추천) */
+.mypage-links a.withdraw {
+  background: #222;
+  color: white;
+  border: none;
+}
+
+.mypage-links a.withdraw:hover {
+  background: #444;
+}
+
+/* ===== 커뮤니티 콘텐츠 카드 ===== */
+.content-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.content-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.content-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.content-card .date {
+  text-align: right;
+  color: #999;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+.category-tab-content {
+  display: none;
+}
+.category-tab-content.active {
+  display: block;
+}
