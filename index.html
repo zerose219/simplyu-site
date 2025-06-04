@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyShop - 메인</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="top-bar">
+      <div class="logo">Simplyu</div>
+      <div class="user-menu">
+        <a href="login.html">로그인</a>
+        <a href="mypage.html">마이페이지</a>
+      </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav class="main-nav">
+  <ul class="main-menu">
+    <li class="dropdown">
+      <a href="#">카테고리</a>
+      <ul class="submenu">
+        <li><a href="category.html?category=top">상의</a></li>
+        <li><a href="category.html?category=bottom">하의</a></li>
+        <li><a href="category.html?category=acc">악세사리</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="community.html?tab=notice">공지</a></li>
+        <li><a href="community.html?tab=question">질문</a></li>
+        <li><a href="community.html?tab=review">리뷰</a></li>
+      </ul>
+    </li>
+    <li><a href="cart.html">주문</a></li>
+    <li class="dropdown search-dropdown">
+      <a href="#">검색</a>
+      <div class="search-bar">
+        <input type="text" placeholder="검색어 입력" />
+        <button>검색</button>
+      </div>
+    </li>
+    <li><a href="login.html">로그인</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <!-- 메인 배너 -->
+  <section class="main-banner">
+    <img src="images/main-banner2.png" alt="상품 이미지" />
+  </section>
+
+  <!-- 베스트 상품 목록 -->
+  <main class="product-section">
+    <h2>베스트 상품</h2>
+    <div class="product-grid">
+      <div class="product-card">베스트 상품 1</div>
+      <div class="product-card">베스트 상품 2</div>
+      <div class="product-card">베스트 상품 3</div>
+      <div class="product-card">베스트 상품 1</div>
+      <div class="product-card">베스트 상품 2</div>
+      <div class="product-card">베스트 상품 3</div>
+      <div class="product-card">베스트 상품 1</div>
+      <div class="product-card">베스트 상품 2</div>
+      <div class="product-card">베스트 상품 3</div>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">이용약관</a>
+      <a href="#">고객센터</a>
+    </div>
+  </footer>
+
+</body>
+</html>
