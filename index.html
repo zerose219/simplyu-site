@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyShop - 메인</title>
+  <title>Simplyu</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -11,7 +11,9 @@
   <!-- 헤더 -->
   <header class="header">
     <div class="top-bar">
-      <div class="logo">Simplyu</div>
+      <div class="logo">
+        <a href="index.html">Simplyu</a>
+      </div>
       <div class="user-menu">
         <a href="login.html">로그인</a>
         <a href="mypage.html">마이페이지</a>
@@ -20,32 +22,31 @@
 
     <!-- 네비게이션 -->
     <nav class="main-nav">
-  <ul class="main-menu">
+    <ul class="main-menu">
     <li class="dropdown">
-      <a href="#">카테고리</a>
-      <ul class="submenu">
+    <a href="category.html">Shop</a>
+    <ul class="submenu">
         <li><a href="category.html?category=top">상의</a></li>
         <li><a href="category.html?category=bottom">하의</a></li>
         <li><a href="category.html?category=acc">악세사리</a></li>
-      </ul>
+    </ul>
     </li>
     <li class="dropdown">
-      <a href="#">커뮤니티</a>
+      <a href="#">community</a>
       <ul class="submenu">
         <li><a href="community.html?tab=notice">공지</a></li>
         <li><a href="community.html?tab=question">질문</a></li>
         <li><a href="community.html?tab=review">리뷰</a></li>
       </ul>
     </li>
-    <li><a href="cart.html">주문</a></li>
+
     <li class="dropdown search-dropdown">
       <a href="#">검색</a>
       <div class="search-bar">
         <input type="text" placeholder="검색어 입력" />
-        <button>검색</button>
+        <button>search</button>
       </div>
     </li>
-    <li><a href="login.html">로그인</a></li>
   </ul>
 </nav>
 
@@ -57,20 +58,56 @@
   </section>
 
   <!-- 베스트 상품 목록 -->
-  <main class="product-section">
-    <h2>베스트 상품</h2>
-    <div class="product-grid">
-      <div class="product-card">베스트 상품 1</div>
-      <div class="product-card">베스트 상품 2</div>
-      <div class="product-card">베스트 상품 3</div>
-      <div class="product-card">베스트 상품 1</div>
-      <div class="product-card">베스트 상품 2</div>
-      <div class="product-card">베스트 상품 3</div>
-      <div class="product-card">베스트 상품 1</div>
-      <div class="product-card">베스트 상품 2</div>
-      <div class="product-card">베스트 상품 3</div>
+<main class="product-section">
+  <h2>베스트 상품</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/best1.png" alt="상품1" />
+      <p class="name">프릴 blouse</p>
+      <p class="price">₩29,000</p>
     </div>
-  </main>
+    <div class="product-card">
+      <img src="images/best2.png" alt="상품2" />
+      <p class="name">버뮤다pants</p>
+      <p class="price">₩39,000</p>
+    </div>
+    <div class="product-card">
+      <img src="images/best3.png" alt="상품3" />
+      <p class="name">데님 shorts</p>
+      <p class="price">₩30,000</p>
+    </div>
+    <div class="product-card">
+      <img src="images/best4.png" alt="상품4" />
+      <p class="name">벌룬 blouse</p>
+      <p class="price">₩38,000</p>
+    </div>
+    <div class="product-card">
+      <img src="images/best5.png" alt="상품5" />
+      <p class="name">셔링 blouse</p>
+      <p class="price">₩35,000</p>
+    </div>
+    <div class="product-card">
+      <img src="images/best6.png" alt="상품6" />
+      <p class="name">크롭 shirts</p>
+      <p class="price">₩38,000</p>
+    </div>
+    <div class="product-card">
+      <img src="images/best7.png" alt="상품7" />
+      <p class="name">실크 dress</p>
+      <p class="price">₩35,000</p>
+    </div>
+    <div class="product-card">
+      <img src="images/best8.png" alt="상품8" />
+      <p class="name">꽃무늬 dress</p>
+      <p class="price">₩32,000</p>
+    </div>
+    <div class="product-card">
+      <img src="images/best9.png" alt="상품9" />
+      <p class="name">라탄 dress</p>
+      <p class="price">₩30,000</p>
+    </div>
+  </div>
+</main>
 
   <!-- 푸터 -->
   <footer class="footer">
