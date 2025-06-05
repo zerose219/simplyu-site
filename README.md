@@ -1,5 +1,6 @@
 # 🛒 Simplyu 쇼핑몰 웹사이트
 **자신만의 취향과 심플한 감성을 담아낸 온라인 쇼핑몰 웹사이트**
+https://zerose219.github.io/simplyu-site/
 
 ---
 
